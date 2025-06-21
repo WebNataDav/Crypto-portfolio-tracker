@@ -1,9 +1,14 @@
-export default function Home() {
+import AppLayout from '@/components/layout';
+import styles from "./styles.module.scss";
+
+const Home = () => {
   return (
-    <div >
-      <main>
+      <AppLayout>
+        <main className={styles.wrapper}>
         <p>Init project</p>
       </main>
-    </div>
+      </AppLayout>
   );
-}
+};
+
+export default Home;

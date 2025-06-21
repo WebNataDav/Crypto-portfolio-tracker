@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-//import "./globals.css";
+import "../styles/global.scss";
 
 export const metadata: Metadata = {
   title: "Crypto Portfolio App",
@@ -12,7 +12,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="vsc-initialized">
         {children}
       </body>
     </html>
